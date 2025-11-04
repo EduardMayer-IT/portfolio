@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio von Eduard Mayer IT - ZAKYX Browser Entwickler">
+    <title>Eduard Mayer IT - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-icon">🚀</span>
+                    <span class="logo-text">Eduard Mayer IT</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Start</a></li>
+                    <li><a href="#about" class="nav-link">Über mich</a></li>
+                    <li><a href="#projects" class="nav-link">Projekte</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Kontakt</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menü öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hallo, ich bin</span>
+                        <span class="name">Eduard Mayer</span>
+                        <span class="title">Software-Entwickler & Rust-Enthusiast</span>
+                    </h1>
+                    <p class="hero-description">
+                        Ich entwickle moderne, sichere und performante Software mit Rust, Tauri und modernen Web-Technologien.
+                        Spezialisiert auf Desktop-Anwendungen und Browser-Entwicklung.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Meine Projekte</a>
+                        <a href="#contact" class="btn btn-secondary">Kontakt aufnehmen</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card">
+                        <div class="card-icon">🦀</div>
+                        <div class="card-text">Rust</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Über mich</h2>
+                <p class="section-subtitle">Wer ich bin und was ich mache</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Ich bin ein leidenschaftlicher Software-Entwickler mit Fokus auf sichere, performante und 
+                        moderne Desktop-Anwendungen. Meine Expertise liegt in der Entwicklung mit Rust, Tauri und 
+                        modernen Web-Technologien.
+                    </p>
+                    <p>
+                        Mit umfangreicher Erfahrung in der Entwicklung komplexer Systeme, Plugin-Architekturen 
+                        und Sicherheitsfeatures habe ich bereits mehrere funktionsfähige Anwendungen entwickelt.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">132+</div>
+                            <div class="stat-label">Rust-Dateien</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">67+</div>
+                            <div class="stat-label">Funktionen</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">87%</div>
+                            <div class="stat-label">Test-Coverage</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">0</div>
+                            <div class="stat-label">Kritische Bugs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projekt</h2>
+                <p class="section-subtitle">ZAKYX Browser - Ein moderner, sicherheitsorientierter Web-Browser</p>
+            </div>
+            
+            <div class="project-featured">
+                <div class="project-image">
+                    <div class="project-preview">
+                        <div class="browser-mockup">
+                            <div class="browser-bar">
+                                <div class="browser-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <div class="browser-url">zakyx://browser</div>
+                            </div>
+                            <div class="browser-content">
+                                <div class="code-preview">
+                                    <div class="code-line"><span class="keyword">pub</span> <span class="keyword">struct</span> Browser {</div>
+                                    <div class="code-line">    <span class="property">tabs</span>: Arc&lt;RwLock&lt;Vec&lt;Tab&gt;&gt;&gt;,</div>
+                                    <div class="code-line">    <span class="property">plugins</span>: PluginManager,</div>
+                                    <div class="code-line">    <span class="property">proxy</span>: SmartProxy,</div>
+                                    <div class="code-line">}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-content">
+                    <div class="project-badges">
+                        <span class="badge rust">Rust</span>
+                        <span class="badge tauri">Tauri</span>
+                        <span class="badge webview">WebView2</span>
+                        <span class="badge production">In Entwicklung</span>
+                    </div>
+                    
+                    <h3 class="project-title">ZAKYX Browser</h3>
+                    <p class="project-description">
+                        Ein Browser-Wrapper in aktiver Entwicklung, entwickelt in Rust mit Tauri v2 
+                        und WebView2. Das Projekt demonstriert fortgeschrittene Softwareentwicklung mit Fokus auf Sicherheit, 
+                        Performance und modulare Architektur.
+                    </p>
+                    
+                    <div class="project-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✅</span>
+                            <span>Modern Browser Engine mit WebView2-Integration</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✅</span>
+                            <span>Tab-Management mit dynamischer Verwaltung</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✅</span>
+                            <span>Bookmark-System mit persistenter Speicherung</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✅</span>
+                            <span>Plugin-System für Erweiterbarkeit</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✅</span>
+                            <span>Smart Proxy System für Website-Kompatibilität</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✅</span>
+                            <span>Security Features mit HTTPS-Enforcement</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-stats">
+                        <div class="project-stat">
+                            <div class="project-stat-value">132</div>
+                            <div class="project-stat-label">Rust-Dateien</div>
+                        </div>
+                        <div class="project-stat">
+                            <div class="project-stat-value">89/100</div>
+                            <div class="project-stat-label">System-Gesundheit</div>
+                        </div>
+                        <div class="project-stat">
+                            <div class="project-stat-value">87%</div>
+                            <div class="project-stat-label">Test-Coverage</div>
+                        </div>
+                        <div class="project-stat">
+                            <div class="project-stat-value">&lt;2s</div>
+                            <div class="project-stat-label">Startup-Zeit</div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/ProjectZakyx/project-zakyx" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <span>🔗</span> Repository ansehen
+                        </a>
+                        <a href="#project-details" class="btn btn-secondary" onclick="showProjectDetails()">
+                            <span>📖</span> Mehr Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Modal -->
+    <div id="projectDetailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectDetails()">&times;</span>
+            <h2>ZAKYX Browser - Technische Details</h2>
+            
+            <div class="modal-section">
+                <h3>📊 Projektstatistiken</h3>
+                <div class="detail-grid">
+                    <div class="detail-card">
+                        <div class="detail-icon">📁</div>
+                        <div class="detail-title">Rust-Dateien</div>
+                        <div class="detail-value">132</div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon">⚙️</div>
+                        <div class="detail-title">Funktionen</div>
+                        <div class="detail-value">67+</div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon">🧪</div>
+                        <div class="detail-title">Tests</div>
+                        <div class="detail-value">35+</div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon">💚</div>
+                        <div class="detail-title">System-Gesundheit</div>
+                        <div class="detail-value">89/100</div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon">📊</div>
+                        <div class="detail-title">Test-Coverage</div>
+                        <div class="detail-value">87%</div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon">🐛</div>
+                        <div class="detail-title">Kritische Bugs</div>
+                        <div class="detail-value">0</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>🛠️ Technologie-Stack</h3>
+                <div class="tech-stack">
+                    <div class="tech-category">
+                        <h4>Backend</h4>
+                        <ul>
+                            <li>🦀 Rust 1.70+ (Memory-safe Systems Programming)</li>
+                            <li>⚡ Tauri v2 (Modern Desktop Framework)</li>
+                            <li>🔄 Tokio (Async Runtime)</li>
+                            <li>🌐 Reqwest (HTTP Client mit Rustls-TLS)</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h4>Frontend</h4>
+                        <ul>
+                            <li>📜 JavaScript ES6+ (Modular Architecture)</li>
+                            <li>🎨 HTML5/CSS3 (Modern UI)</li>
+                            <li>🪟 WebView2 (Chromium Engine)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>✨ Hauptfeatures</h3>
+                <div class="features-list">
+                    <div class="feature-box">
+                        <h4>🚀 Core Features</h4>
+                        <ul>
+                            <li>Modern Browser Engine mit WebView2-Integration</li>
+                            <li>Tab-Management mit dynamischer Verwaltung</li>
+                            <li>Bookmark-System mit persistenter Speicherung</li>
+                            <li>History-Management mit Suchfunktion</li>
+                            <li>Settings-Management mit Konfiguration</li>
+                        </ul>
+                    </div>
+                    <div class="feature-box">
+                        <h4>🔌 Advanced Features</h4>
+                        <ul>
+                            <li>Plugin-System für Erweiterbarkeit</li>
+                            <li>Smart Proxy System für Website-Kompatibilität</li>
+                            <li>Security Features mit HTTPS-Enforcement</li>
+                            <li>Metrics System für Performance-Monitoring</li>
+                            <li>Error-Handling mit einheitlichem System</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>📈 Performance-Metriken</h3>
+                <div class="performance-grid">
+                    <div class="perf-item">
+                        <span class="perf-label">Startup-Zeit</span>
+                        <span class="perf-value">&lt; 2s</span>
+                    </div>
+                    <div class="perf-item">
+                        <span class="perf-label">Speicherverbrauch</span>
+                        <span class="perf-value">~68MB</span>
+                    </div>
+                    <div class="perf-item">
+                        <span class="perf-label">Tab-Erstellung</span>
+                        <span class="perf-value">~50ms</span>
+                    </div>
+                    <div class="perf-item">
+                        <span class="perf-label">Navigation</span>
+                        <span class="perf-value">~200ms</span>
+                    </div>
+                    <div class="perf-item">
+                        <span class="perf-label">Proxy-Latenz</span>
+                        <span class="perf-value">50-200ms</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>🏗️ Architektur</h3>
+                <div class="architecture-info">
+                    <p><strong>Modulare Struktur:</strong></p>
+                    <ul>
+                        <li><code>src/browser/</code> - Browser-Kernfunktionalität</li>
+                        <li><code>src/plugin/</code> - Plugin-System</li>
+                        <li><code>src/proxy/</code> - Smart Proxy System</li>
+                        <li><code>src/security/</code> - Sicherheits-Features</li>
+                        <li><code>src/error/</code> - Error-Handling</li>
+                        <li><code>src/ui/</code> - UI-Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologien</h2>
+                <p class="section-subtitle">Technologien, mit denen ich arbeite</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">🦀 Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Rust</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tauri</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tokio</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Async/Await</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="skill-category-title">🌐 Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript ES6+</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5/CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">WebView2</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Modular Architecture</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="skill-category-title">🔧 Tools & Practices</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Testing</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Error Handling</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 93%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Architecture Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kontakt</h2>
+                <p class="section-subtitle">Lass uns zusammenarbeiten</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>Über GitHub erreichbar</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">💼</div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/ProjectZakyx/project-zakyx" target="_blank" rel="noopener noreferrer">
+                            ProjectZakyx
+                        </a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🚀</div>
+                        <h3>Projekte</h3>
+                        <p>ZAKYX Browser</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Eduard Mayer IT. Entwickelt mit ❤️ und Rust.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/ProjectZakyx/project-zakyx" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
